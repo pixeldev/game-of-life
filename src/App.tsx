@@ -5,7 +5,7 @@ import React, {
 import { Cell } from "./board/Cell.tsx";
 import { calculateNextBoard } from "./board/Game.ts";
 
-export const rows: number = 71;
+export const rows: number = 70;
 export const columns: number = 30;
 
 type GameData = {
@@ -54,6 +54,9 @@ function App() {
 				});
 			} else {
 				setBoard((board: boolean[][]) => calculateNextBoard(board));
+                if (moments !== -1) {
+                    moments--;
+                }
 			}
 		}, delayBetweenMoments);
 		setGameData({
