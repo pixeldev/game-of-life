@@ -1,0 +1,14 @@
+.cell {
+	border: 1px solid #ffffff;
+	height: 25px;
+	width: 25px;
+	margin: 1px;
+}
+
+.cell-alive {
+	background-color: #ffffff;
+}
+
+.cell-dead {
+	background-color: transparent;
+}
